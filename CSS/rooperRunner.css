@@ -184,4 +184,28 @@
         display: flex;
     }
   }
+  @media (max-width: 600px) {
+    
+    body {
+      grid-template-columns: 1fr;
+      grid-template-rows: 73px 73px 1fr 1fr;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+    }
+  footer{
+    z-index: 0;
+  }
   
+  
+  nav{
+    position: unset;
+    margin-top: 0;
+  }
+    nav ul{
+        display: flex;
+    }
+  }
