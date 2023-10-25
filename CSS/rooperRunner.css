@@ -200,7 +200,9 @@
     z-index: 0;
   }
   
-  
+  header img{
+    width: 30%;
+  }
   nav{
     position: unset;
     margin-top: 0;
