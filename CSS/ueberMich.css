@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #B392AC; /* Hauptfarbe */
+    --secondary-color: #D1B3CA; /* Sekundärfarbe */
+    --accent-color: #735D78; /* Akzentfarbe */
+    --third-color: #E8C2CA;
+    --fourth-color: #F7D1CD;
+  }
+  
+  
+  html, body, h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  *{
+    font-family: 'Roboto Mono';
+  }
+  
+  body {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 12% 68% 20%;
+    grid-template-rows: 100px 3fr 100px;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer aside"
+    ;
+  }
+  
+  header {
+    grid-area: header;
+    min-height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 25px;
+    z-index: 1;
+  }
+  
+  nav {
+    grid-area: nav;
+    background-color: var(--secondary-color);
+    color: white;
+    position: sticky;
+    top: 50px;
+    
+  }
+  nav ul {
+    display: block;
+    list-style: none;
+    justify-content: space-evenly;
+  }
+  
+  
+  main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent-color);
+    text-align: justify;
+    padding: 10px;
+    ;
+  }
+  
+  aside {
+    grid-area: aside;
+    min-height: 100px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    position: sticky;
+  }
+  
+  nav a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    
+  }
+  
+  /* Active/current link */
+  nav a.active {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  nav a:hover:not(.active) {
+    background-color: var(--third-color);
+    color: white;
+  }
+  
+  footer {
+    grid-area: footer;
+    padding: 10px;
+    height: 80px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+    
+    font-size: 0.8em;
+  }
+  
+  footer div{
+  border: 1px solid black;
+  padding: 15px;
+  width: 0.5fr;
+  background-color: var(--secondary-color);
+  margin: 5px;
+  }
+  
+  footer ul{
+  list-style: none;
+  }
+  
+  img{
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+  }
+  
+  .tiktok-sidebar{
+    width: 185px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .scrollbox{
+    overflow: auto;
+  }
+  
+  .scrollbox-inner{
+    font: 16px;
+    color: #ffffff;
+    justify-content: center;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #ffffff;
+  }

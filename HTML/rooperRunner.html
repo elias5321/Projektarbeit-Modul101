@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projektarbeit</title>
+    <link rel="stylesheet" href="../CSS/rooperRunner.css">
+    <link href="https://fonts.cdnfonts.com/css/roboto-mono" rel="stylesheet">
+    <script src="../JAVASCRIPT/slideshow.js"></script>
+</head>
+
+<body>
+    <style>
+        .mySlides {display:none}
+        .w3-left, .w3-right, .w3-badge {cursor:pointer}
+        .w3-badge {height:13px;width:13px;padding:0}
+    </style>
+    <header>
+       <img src="../Medien/RooperRunner_Logo-removebg-preview.png" width="300" alt="">
+    </header>
+    <nav>
+        <ul>
+         
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">Newsletter</a></li>
+          <li><a href="ueberMich.html">Über Mich</a></li>
+          <li><a href="#Kontakt">Kontakt</a></li>
+          <li><a class="active" href="rooperRunner.html"> Rooper Runner</a></li>
+        </ul>
+    </nav>
+    <main>
+        
+        <article>
+            
+
+            <h2 class="w3-center">Screenshots vom Spiel</h2><br>
+
+            <div class="w3-content w3-display-container">
+              <img class="mySlides" src="../Medien/Bild1.png" alt="" style="width:100%">
+              <img class="mySlides" src="../Medien/Bild2.png" alt="" style="width:100%">
+              <img class="mySlides" src="../Medien/Bild3.png" alt="" style="width:100%">
+              <img class="mySlides" src="../Medien/Bild4.png" alt="" style="width:100%">
+            
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+            <p>  
+            <br>
+            
+             Rooper Runner ist ein 2D-Plattformspiel das in einer 8-Bit Graphik erstellt wurde. Ich habe es als 
+             Abschlussarbeit in der Sekundarschule gemacht und bin auch sehr stolz darauf. Leider wurde das Spiel noch nicht
+             veröffentlicht und so ist auch noch nicht spielbar. Rooper Runner wurde mit dem Pixelpack "Warped City" ausgestattet. In dem Spiel geht es darum mit dem Character "Syenna" ans Ziel zu gelangen
+             und dabei alle Gegner zu besiegen. <br><br>Es erwarten euch epische Bossfights, spannende Abenteuer und viel Adrenalin. Bleibt dran und gespannt. Liebe Grüsse ihr Entwicklerteam von Rooper Runner.<br> <br>
+            
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/WsYOYHBeNCs?si=xzLOjaZPE9t3_Wvb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+        </article>
+       
+    </main>
+    <aside>
+        <div class="scrollbox">
+            <div class="scrollbox-inner">
+                <article>
+                    <h3>Neues Video</h3>
+                    <video class="tiktok-sidebar" src="../Medien/TIktok_Video1.mp4" controls></video>
+                </article>
+                <article>
+                    <h3>Neues Video</h3>
+                    <video class="tiktok-sidebar" src="../Medien/TikTok.mp4" controls></video>
+                </article>
+            </div>
+        </div>
+    </aside>
+    <footer class="flx-footer">
+        <ul>
+            <li><h3>Socials</h3></li>
+            <li><a href="https://www.instagram.com/elias._.5321/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/elias-d%C3%BCggeli-3732a025b/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.tiktok.com/@elias.5321" target="_blank">TikTok</a></li>
+            <li><a href="https://www.youtube.com/@eliasduggeli1902" target="_blank">YouTube</a></li>
+        </ul>
+        <ul>
+            <li><h3 id="Kontakt">Kontakt</h3></li>
+            <li>Elias Düggeli</li>
+            <li>Ebenrainweg 13</li>
+            <li>4450 Sissach</li>
+        </ul>
+      </footer>
+</body>
+</html>
