@@ -6,6 +6,11 @@
     --fourth-color: #F7D1CD;
   }
   
+
+  table{
+    border-spacing: 15px;
+    border-collapse: separate;
+  }
   
   html, body, h1, h2, h3, ul, li, p {
     margin: 0;
@@ -114,7 +119,6 @@
   footer div{
   border: 1px solid black;
   padding: 15px;
-  width: 0.5fr;
   background-color: var(--secondary-color);
   margin: 5px;
   }
